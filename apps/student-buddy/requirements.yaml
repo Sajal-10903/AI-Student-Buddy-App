@@ -1,0 +1,20 @@
+packages:
+  "recharts": "Data visualization for student performance metrics"
+  "framer-motion": "Smooth page transitions and micro-interactions"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility for merging Tailwind classes"
+  "date-fns": "For formatting human-readable dates in history/results"
+  "zustand": "Global state management for auth and active quiz sessions"
+
+images:
+  - path: "artifacts/student-buddy/public/images/hero-bg.png"
+    description: "Abstract 3D geometric shapes floating in a clean, bright, modern space with soft indigo and purple lighting, representing learning and artificial intelligence. Very clean white/light gray background with vibrant accents."
+    aspect_ratio: "16:9"
+  - path: "artifacts/student-buddy/public/images/auth-bg.png"
+    description: "Soft, smooth gradient mesh in deep indigo, violet, and electric blue colors. Clean, premium, abstract aesthetic."
+    aspect_ratio: "16:9"
+
+notes:
+  - Intercepting window.fetch in App.tsx to append Bearer token to all generated Orval API hooks.
+  - Using Zustand to pass the generated quiz data from the Generate page to the Take Quiz page without relying on URL state.
+  - Assuming the API handles refresh tokens or we redirect to login on 401.
